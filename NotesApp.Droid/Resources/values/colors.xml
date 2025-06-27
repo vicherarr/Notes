@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Azul oscuro para barra de navegación o encabezados -->
+    <color name="colorPrimary">#1E88E5</color>
+    
+    <!-- Variante más oscura para status bar -->
+    <color name="colorPrimaryDark">#1565C0</color>
+    
+    <!-- Acento más fuerte para botones y resaltados -->
+    <color name="colorAccent">#FF4081</color>
+    
+    <!-- Texto principal -->
+    <color name="black">#FF212121</color>
+    
+    <!-- Fondo claro -->
+    <color name="white">#FFF5F5F5</color>
+</resources>

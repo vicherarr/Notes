@@ -1,0 +1,8 @@
+﻿################################################################################
+# Este archivo .gitignore ha sido creado automáticamente por Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Core/NotesApp.Core/bin/Debug/net8.0
+/Core/NotesApp.Core/obj
+/NotesApp.Droid

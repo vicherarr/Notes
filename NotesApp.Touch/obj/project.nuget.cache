@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "RGj+5v0hcYk=",
+  "success": true,
+  "projectFilePath": "C:\\develop\\Notes\\NotesApp.Touch\\NotesApp.Touch.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\victo\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.17\\microsoft.net.illink.tasks.8.0.17.nupkg.sha512",
+    "C:\\Users\\victo\\.nuget\\packages\\microsoft.ios.ref.net8.0_18.0\\18.0.8324\\microsoft.ios.ref.net8.0_18.0.18.0.8324.nupkg.sha512",
+    "C:\\Users\\victo\\.nuget\\packages\\microsoft.ios.runtime.iossimulator-x64.net8.0_18.0\\18.0.8324\\microsoft.ios.runtime.iossimulator-x64.net8.0_18.0.18.0.8324.nupkg.sha512"
+  ],
+  "logs": []
+}
