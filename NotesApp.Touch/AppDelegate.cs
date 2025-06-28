@@ -1,34 +1,25 @@
+using MvvmCross;
+using MvvmCross.Platforms.Ios.Core;
+using MvvmCross.Platforms.Ios.Presenters;
+using MvvmCross.ViewModels;
+using NotesApp.Core;
+using NotesApp.Touch.Configuracion;
+using ObjCRuntime;
+using UIKit;
+
 namespace NotesApp.Touch
 {
-    [Register("AppDelegate")]
-    public class AppDelegate : UIApplicationDelegate
+    [Register(nameof(AppDelegate))]
+    public class AppDelegate : MvxApplicationDelegate<Setup, App>
     {
-        public override UIWindow? Window
+        public override UIWindow Window { get; set; }
+
+        // FinishedLaunching is the very first code to be executed in your app. Don't forget to call base!
+        public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
         {
-            get;
-            set;
-        }
+            var result = base.FinishedLaunching(application, launchOptions);
 
-        public override bool FinishedLaunching(UIApplication application, NSDictionary? launchOptions)
-        {
-            // create a new window instance based on the screen size
-            Window = new UIWindow(UIScreen.MainScreen.Bounds);
-
-            // create a UIViewController with a single UILabel
-            var vc = new UIViewController();
-            vc.View!.AddSubview(new UILabel(Window!.Frame)
-            {
-                BackgroundColor = UIColor.SystemBackground,
-                TextAlignment = UITextAlignment.Center,
-                Text = "Hello, iOS!",
-                AutoresizingMask = UIViewAutoresizing.All,
-            });
-            Window.RootViewController = vc;
-
-            // make the window visible
-            Window.MakeKeyAndVisible();
-
-            return true;
+            return result;
         }
     }
 }
