@@ -8,7 +8,7 @@ using NotesApp.Core.ViewModels;
 namespace NotesApp.Droid.Views
 {
     [MvxActivityPresentation]
-    [Activity(Label = "Home", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
+    [Activity(Label = "Home",  MainLauncher = true)]
     
     [Register("noteasapp.droid.views.HomeView")]
     public class HomeView : MvxActivity<HomeViewModel>
